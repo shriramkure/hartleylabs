@@ -1,0 +1,39 @@
+/********** Variable declarations ************/
+
+.header{
+    background-color: #efefef;
+    display: flex;
+
+    .logo{
+        flex: 4;
+    }
+
+    .navbar{
+        flex: 4;
+        ul{
+            list-style-type: none;
+            display: flex;
+            li{
+                flex: 2;
+            }
+        }
+    }
+
+    /* Mobile Devices */
+    @media only screen and (max-device-width: 480px) {
+        .logo{
+            flex: 1;
+        }
+    
+        .navbar{
+            flex: 4;
+            ul{
+                list-style-type: none;
+                display: flex;
+                li{
+                    flex: 2;
+                }
+            }
+        }
+    }
+}
